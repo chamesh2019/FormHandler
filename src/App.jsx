@@ -85,7 +85,7 @@ function App() {
           }
       })
       .catch((error) => {
-        showToast(error, 0);
+        showToast("Something went wrong, please try again later", 0);
       });
   };
   return (

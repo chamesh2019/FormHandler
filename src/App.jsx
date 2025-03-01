@@ -46,15 +46,15 @@ function App() {
     toast.classList.remove("hidden");
 
     if (status === 1) {
-        document.querySelector('alert').classList.add("alert-success");
+        document.querySelector('.alert').classList.add("alert-success");
     } else {
-        document.querySelector('alert').classList.add("alert-error");
+        document.querySelector('.alert').classList.add("alert-error");
     }
 
     setTimeout(() => {
       toast.classList.add("hidden");
-      document.querySelector('alert').classList.remove("alert-success");
-      document.querySelector('alert').classList.remove("alert-success");
+      document.querySelector('.alert').classList.remove("alert-success");
+      document.querySelector('.alert').classList.remove("alert-success");
     }
     , 3000);
   };
@@ -84,7 +84,7 @@ function App() {
             showToast(data.message, 0);
           }
       })
-      .catch((error) => {
+      .catch(() => {
         showToast("Something went wrong, please try again later", 0);
       });
   };
